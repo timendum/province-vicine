@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="d3.v7.min.js"></script>
+    <script src="topojson.v3.0.2.min.js"></script>
+    <script src="map.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <style>
+        #svg {
+            border: 1px solid black;
+        }
+        #zoom-in, #zoom-zero, #zoom-out {
+          width: 3em;
+          font-family: monospace;
+        }
+        #zoom-buttons {
+          margin-left: 0.5em;
+          margin-top: -2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="chart"></div>
+        <div id="zoom-buttons">
+          <button id="zoom-in">+</button>
+          <button id="zoom-zero">100%</button>
+          <button id="zoom-out">-</button>
+        </div>
+    </div>
+</body>
+
+</html>
